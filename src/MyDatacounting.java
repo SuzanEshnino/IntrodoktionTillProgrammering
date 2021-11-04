@@ -63,7 +63,7 @@ public class MyDatacounting {
         myData = data;
         String[] ary = myData.split("\\s+");
         for (int i = 0; i < ary.length; i++) {
-            if (!ary[i].equals("stop")) {
+            if (!ary[i].equals("stop")&& !ary[i].equals("")){
                 numOfWords = numOfWords + 1;
 
             } else {

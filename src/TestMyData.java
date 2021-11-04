@@ -18,6 +18,19 @@ public class TestMyData {
 
     }
 
+    @Test
+    public void testNumberOfNullWords() {
+
+        String data = "";
+        MyDatacounting words = new MyDatacounting();
+        words.addWords(data);
+        int actual = words.getNumOfWords();
+        int expected = 0;
+        assertEquals(expected, actual);
+
+
+    }
+
 
     @Test
     public void testNumberOfCharacters() {
